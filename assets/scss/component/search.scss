@@ -1,0 +1,43 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/* 2.8 Search
+/*----------------------------------------*/
+.er-header-search-bar.er-search-open {
+    top: 0;
+    transform: translateY(0);
+    
+}
+.er-header-search-bar {
+    height: 400px;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #ecebeb;
+    transition: 0.3s;
+    transform: translateY(-100%);
+    
+}
+.er-search-close {
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    font-size: 50px;
+    color: #222;
+    font-weight: 300;
+    width: 45px;
+    height: 45px;
+}
+.contact-search-form-box {
+    position: relative;
+    & button {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    font-size: 17px;
+    
+}
+    }
+
+    

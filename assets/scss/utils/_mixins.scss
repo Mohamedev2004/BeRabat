@@ -1,0 +1,30 @@
+// place holder mixing
+
+@mixin tp-placeholder {
+    &::-webkit-input-placeholder{
+        @content;
+    }
+    &:-moz-placeholder{
+        @content;
+    }
+    &::-moz-placeholder{
+        @content;
+    }
+    &:-ms-input-placeholder{
+        @content;
+    }
+}
+@mixin transition($args){
+    transition:$args;
+    -webkit-transition:$args;
+    -moz-transition:$args;
+    -ms-transition:$args;
+    -o-transition:$args;
+}
+@mixin transform($transforms){
+    transform: $transforms;
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+}

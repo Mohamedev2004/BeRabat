@@ -1,0 +1,156 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 5.1 Footer Style 1
+/*----------------------------------------*/
+
+.er-footer{
+    &-logo{
+        & img{
+            width: 152px;
+        }
+    }
+    &-title{
+        color: #FFF;
+        font-family: var(--er-fonts-title);
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px; /* 140% */
+        text-transform: uppercase;
+        & span{
+            width: 3px;
+            height: 21px;
+            background-color: var(--er-theme-color);
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    &-menu{
+        & li{
+            list-style: none;
+            margin-bottom: 10px;
+            display: block;
+            @include transition(.3s);
+            & a{
+                color: #f0f0f0;
+                font-family: var(--er-fonts-body);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                opacity: 0.8;
+                text-transform: capitalize;
+                display: inline;
+            }
+            &:hover{
+               & a{
+                color: var(--er-theme-color);
+               }
+            }
+        }
+    }
+    &-text{
+        opacity: 0.8;
+        color: #f0f0f0;
+        font-family: var(--er-fonts-body);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    &-form{
+        & input{
+            color: #FFF;
+            font-family: var(--er-fonts-body);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: capitalize;
+            border: 0.5px solid rgba(255, 255, 255, 0.60);
+            background: rgba(255, 255, 255, 0.10);
+            padding-left: 20px;
+        }
+    }
+    &-info{
+        &-logo{
+            background-color: #363636;
+            width: 53px;
+            height: 53px;
+            line-height: 53px;
+            text-align: center;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+        &-content{
+            & span{
+                color: #777;
+                font-family: var(--er-fonts-body);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: capitalize;
+                opacity: 0.8;
+            }
+            & h3{
+                color: #f0f0f0;
+                font-family: var(--er-fonts-title);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+        &-sep{
+            width: 270px;
+            height: 0.5px;
+            opacity: 0.3;
+            background: #FFF;
+        }
+    }
+    &-social{
+        & a{
+            display: inline-block;
+            width: 44px;
+            height: 40px;
+            border: 1px solid #363636;
+            line-height: 40px;
+            text-align: center;
+            font-size: 14px;
+            margin-right: 12px;
+            transition: 0.3s;
+            color: #aeaeae;
+            &:hover{
+                background-color: var(--er-theme-color);
+                color: #FFF;
+            }
+        }
+       
+        
+    }
+    &-copyright{
+
+        & a{
+        color: #f0f0f0;
+        text-align: center;
+        font-family: var(--er-fonts-body);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        opacity: 0.8;
+        text-transform: capitalize;
+        display: inline-block;
+        }
+    }
+}
+.er-footer-widget{
+    &-2{
+        @media #{$lg, $md, $xs}{
+            padding-left: 0px;
+        }
+    }
+    &-3{
+        @media #{$lg, $md, $xs}{
+            padding-left: 0px;
+        }
+    }
+}

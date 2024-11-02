@@ -1,0 +1,39 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 6.6 Fact css
+/*----------------------------------------*/
+.er-facts{
+   
+    border-bottom: 1px solid rgba(28, 30, 34, 0.10);
+    @include transition(.3s);
+    &:hover{
+    border-color: rgba(255, 64, 64, 1);    
+    }
+    &-number{
+        color: #222429;
+        font-family: var(--er-fonts-title);
+        font-size: 72px;
+        font-weight: 600;
+        line-height: 1;
+    }
+    &-content{
+        color: #777;
+        font-family:var(--er-fonts-body);
+        margin-bottom: 42px;
+        font-weight: 400;
+    }
+    &-2{
+        border-color: #3D3D3D;
+    }
+}
+
+// home page 2 change
+.pb-420{
+    padding-bottom: 380px;
+}
+.er-fact-area{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+   
+}

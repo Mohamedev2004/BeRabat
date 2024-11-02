@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 6.7 Faq css
+/*----------------------------------------*/
+
+.er-faq-shap-3 {
+	
+    left: 220px;
+    z-index: 5;
+    @media #{$xl}{
+        left: 190px;
+    }
+}
+.er-faq-shap-1 {
+	left: -160px;
+    z-index: 5;
+}
+
+.er-faq-area {
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.er-faq-shap img {
+    position: absolute;
+}
+
+
+
+.er-faq-area{
+      &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #FFF;
+    background: linear-gradient(0deg, white, rgb(255, 255, 255) 80%) no-repeat;
+    opacity: 96%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+}
+}

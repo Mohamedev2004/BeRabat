@@ -1,0 +1,225 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 3.1 Header Style 1
+/*----------------------------------------*/
+
+.er-main-menu {
+    & ul{
+        & li{
+            display: inline-block;
+            margin-left: 40px;
+            position: relative;
+            @media #{$xl}{
+                margin-left: 25px;
+            }
+            & >a{
+                position: relative;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                display: inline-block;
+                padding: 36px 0;
+                font-family: var(--er-fonts-body);
+                @include transition(.3s);
+                
+                               
+            }
+            & .sub-menu{
+                position: absolute;
+                top: 105%;
+                width: 213px;
+                left: 0;
+                background: #fff;
+                padding: 16px 0;
+                opacity: 0;
+                visibility: hidden;
+                border-top: 4px solid var(--er-theme-color);
+                @include transition(.3s);
+                z-index: 20;
+                box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
+                & li{
+                    margin-left: 0;
+                    display: block;
+                    & a{
+                        color: #000;
+                        display: block;
+                        padding: 4px 25px;
+                        font-size: 15px;
+                        font-weight: 400;
+                        &::before{
+                            display: none;
+                        }
+                        
+                    } 
+                    
+                    &:hover{
+                        & >a{
+                            color: var(--er-theme-color);
+                            
+                        }
+                    } 
+                }
+                
+            }
+            &:hover{
+                & a{
+                    color: var(--er-theme-color);
+                }
+                & .sub-menu{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+
+            }
+        }
+    }
+    
+}
+
+.er-main-menu-2{
+ & ul{
+    & >li{
+        & >a{
+            color: #202020;
+            opacity: 80%;
+            position: relative;
+        }
+        &:hover{
+            & >a{
+                color: var(--er-theme-color);
+            }
+        }
+    }
+ }
+}
+.er-header{
+    &-logo{
+        & img{
+            width: 152px;
+        }
+    }
+    &-serch{
+        & button{
+            display: inline;
+            & i{
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+        
+    }
+}
+.er-header-bar {
+    margin-left: 30px;
+    @media #{$md, $xs}{
+        margin-left: 0;
+      
+    }
+    & button {
+        background-color:  var(--er-theme-color);
+        padding: 12px 30px;
+        display: block;
+        margin: 10px 0;
+        @media #{$xs}{
+            padding: 5px 30px;
+          
+        }
+        & i{
+            color: #ffffff;
+    
+        }
+    }
+}
+.er-header-serch-2{
+    & button {
+        & i{
+            color: #202020;
+    
+        }
+    }
+}
+.er-right-menu{
+    @media #{$xs}{
+        padding-left: 0px;
+    }
+    @media #{$xl}{
+        padding-left: 60px;
+    }
+}
+// mega menu 
+.er-main-menu ul > li:hover .er-mega-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.er-mega-menu {
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 1200px;
+    background: #fff;
+    padding: 25px;
+    padding-bottom: 0;
+    box-shadow: 0px 20px 30px rgba(1, 15, 28, 0.1);
+    z-index: 120;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+    @media #{$lg,$lg,$md,$xs}{
+        width: auto;
+        opacity: 1;
+        visibility: visible;
+        transition: none;
+        position: static;
+        display: none;
+    }
+  }
+
+  .er-home-thumb {
+    text-align: center;
+    opacity: 1;
+    
+  }
+  .er-home-title {
+    font-size: 17px;
+    margin-top: 19px;
+    margin-bottom: 0;
+    opacity: 1;
+  }
+  .er-home-thumb img {
+    box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
+  }
+
+  @keyframes erfadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .erfadeInDown {
+    animation: erfadeInDown 1s ease-out forwards;
+    -webkit-animation: erfadeInDown 1s ease-out forwards;
+}
+  
+
+
+//  sticky 
+.header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-animation: .7s ease-in-out 0s normal none 1 running efradeInDown;
+    animation: .7s ease-in-out 0s normal none 1 running efradeInDown;
+    // &.er-header-1{
+    //     background-color: var(--er-common-black);
+    // }
+    z-index: 99;
+}
+

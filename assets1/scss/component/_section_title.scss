@@ -1,0 +1,96 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 2.7 Section Title 
+/*----------------------------------------*/
+
+.er-section{
+    &-subtitle{
+        color: var(--er-theme-color);
+        font-size: 16px;
+        font-family: var( --er-fonts-body);
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+        // display: flex;
+        // align-items: center;
+        &::before{
+            content: "";
+            background-color: var(--er-theme-color);
+            height: 1px;
+            width: 15px;
+            display: inline-block;
+            margin-right: 10px;
+            @include transform(translatey(-4px));
+        }
+    }
+    &-title{
+        font-family: var(--er-fonts-title);
+        font-size: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1;
+        @media #{ $xs}{
+            font-size: 40px;;
+        }
+        & br{
+            @media #{ $xs}{
+                display:none;
+            } 
+        }
+        &-white{
+            color: #ffff;
+            font-family: var(--er-fonts-title);
+            font-size: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1;
+            @media #{ $xs}{
+                font-size: 40px;;
+            }
+        }
+        & span{
+            width: 6px;
+            height: 100px;
+            display: inline-block;
+            background: var(--er-theme-color);
+            margin-right: 18px;
+            @media #{ $xs, $md}{
+                height:162px;
+            }
+        }
+    }
+    &-content{
+        font-family: var( --er-fonts-body);
+        font-style: normal;
+        &-white{
+            color: #ffff;
+        }
+        & br{
+            @media #{$xl, $lg, $md, $xs}{
+                display:none;
+            } 
+        }
+    }
+   
+}
+.er-section-fs40{
+    color: var(--er-theme-heading-2);
+    font-family: var( --er-fonts-title);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.er-section-fs30{
+    color: var(--er-theme-heading-2);
+    font-family: var( --er-fonts-title);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}

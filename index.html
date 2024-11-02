@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.png">
+    <title>BERABAT</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-pro.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon-exdos.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMF4LlN6i25yGmSiun3i6X9IOOCzR4RtmrS7wX2" crossorigin="anonymous">
+</head>
+<style>
+    .trusted-section {
+      width: 100%; /* Full width */
+      overflow: hidden;
+      white-space: nowrap; /* Prevents line breaks */
+    }
+  
+    .logo-container {
+      display: inline-flex;
+      animation: scroll-logos 20s linear infinite;
+    }
+  
+    .logo-container img {
+      width: 150px; /* Adjust size as needed */
+      margin-right: 120px; /* Spacing between logos */
+    }
+    .swiper-pagination-bullet {
+    background-color: white; /* Changes the default bullet color */
+    opacity: 0.7; /* Makes the bullets slightly transparent */
+}
+  
+    @keyframes scroll-logos {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+</style>
+<body>
+
+    <!-- scroll to top  -->
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- preloader  -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader  -->
+
+    <!-- <header area start -->
+    <header>
+        <div id="er-header-sticky" class="er-header-area " data-bg-color="#202020">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-2 col-5">
+                        <div class="er-header-logo">
+                            <a href="index.html"><img src="assets/img/Logo.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-7">
+                        <div class="er-header-box d-flex justify-content-end align-items-center">
+                            <div class="er-main-menu d-none d-xl-block">
+                                <nav class="er-mobile-menu-active">
+                                    <ul>
+                                        <li class="has-dropdown"><a href="#">Accueil</a>
+                                            
+                                        </li>
+                                        <li><a href="Evenementiel.html">Evénementiel</a> </li>
+                                        <li><a href="Communication.html">Communication</a> </li>
+                                        <li class="has-dropdown"><a href="Animation.html">Animation</a>
+                                            
+
+                                        </li>
+                                        <li class="has-dropdown"><a href="#">Blog</a>
+                                            
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="er-right-menu pl-120 d-flex align-items-center">
+                                
+                                <div class="er-header-btn d-none d-lg-block">
+                                    <a href="contact.html" class="er-btn"><span>Discutons</span></a>
+                                </div>
+                                <div class="er-header-bar d-xl-none">
+                                    <button class="er-offcanvas-toogle"><i class="fas fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- offcanvas -->
+    <div class="er-offcanvas">
+        <div class="er-offcanvas-wrapper">
+            <div class="er-offcanvas-header d-flex justify-content-between align-items-center mb-90">
+                <div class="er-offcanvas-logo">
+                    <img src="assets/img/Logoo.png" alt="">
+                </div>
+                <div class="er-offcanvas-close">
+                    <button class="er-offcanvas-close-toggle"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="er-offcanvas-menu mb-50 d-xl-none">
+                <nav></nav>
+            </div>
+            
+            <div class="er-offcanvas-info mb-50">
+                <h3 class="er-offcanvas-sm-title">Information</h3>
+                <span><a href="#">06 72 39 27 03</a></span>
+                <span><a href="#"><span class="__cf_email__" data-cfemail="234a4d454c6347464e4c4e424a4f0d404c4e">contact.berabat@gmail.com</span></a>
+                </span>
+                <span><a href="#">Rabat, Agdal</a></span>
+            </div>
+            <div class="er-offcanvas-social">
+                <h3 class="er-offcanvas-sm-title">Suivez-Nous</h3>
+                <a href="https://web.facebook.com/berabatevents/?_rdc=1&_rdr#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/be.rabat/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@berabat"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="er-offcanvas-overlay"></div>
+    </div>
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide er-hero-area pt-210 pb-180 p-relative fix" data-background="assets/img/1.png">
+                        <div class="er-hero-overlay"></div>
+                        <div class="er-hero-shap">
+                            <img class="er-hero-shap-1 p-absolute" src="assets/img/hero/element-top-left.png" alt="">
+                            <img class="er-hero-shap-2 p-absolute" src="assets/img/hero/element-top-right.png" alt="">
+                            <img class="er-hero-shap-3 p-absolute" src="assets/img/hero/element-round.png" alt="">
+                            <img class="er-hero-shap-4 p-absolute" src="assets/img/hero/element-buttom-left.png" alt="">
+                            <img class="er-hero-shap-5 p-absolute" src="assets/img/hero/element-top-dot.png" alt="">
+                        </div>
+                        <div class=" container p-relative z-index-11 ">
+                            <div class="row">
+                                <div class="col-xl-7 col-md-8 col-12">
+                                    <div class="er-hero-contain">
+                                        <h1 class="er-hero-title mb-20 wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.1s">Nous organisons votre événement … <br> SUR MESURE !</h1>
+                                        <p class="er-hero-para wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.4s">Team Buildings, Conférences, Soirées, Kermesses, Tournois sportifs, …</p>
+                                    </div>
+                                    <div class="er-hero-btn mt-48 wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.9s">
+                                        <a href="Evenementiel.html" class="er-btn-2"><span>Nos services </span><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="swiper-slide er-hero-area pt-210 pb-180 p-relative fix" data-background="assets/img/c.png">
+                        <div class="er-hero-overlay"></div>
+                        <div class="er-hero-shap">
+                            <img class="er-hero-shap-1 p-absolute" src="assets/img/hero/element-top-left.png" alt="">
+                            <img class="er-hero-shap-2 p-absolute" src="assets/img/hero/element-top-right.png" alt="">
+                            <img class="er-hero-shap-3 p-absolute" src="assets/img/hero/element-round.png" alt="">
+                            <img class="er-hero-shap-4 p-absolute" src="assets/img/hero/element-buttom-left.png" alt="">
+                            <img class="er-hero-shap-5 p-absolute" src="assets/img/hero/element-top-dot.png" alt="">
+                        </div>
+                        <div class=" container p-relative z-index-11 ">
+                            <div class="row">
+                                <div class="col-xl-7 col-md-8 col-12">
+                                    <div class="er-hero-contain">
+                                        <h1 class="er-hero-title mb-20 wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.1s">Du concept à la réalité : votre succès est notre mission !</h1>
+                                        <p class="er-hero-para wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.4s">Community Management, Photographie et Vidéographie, Infographie, Publicité, …</p>
+                                    </div>
+                                    <div class="er-hero-btn mt-48 wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.9s">
+                                        <a href="Communication.html" class="er-btn-2"><span>Nos services </span><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="swiper-slide er-hero-area pt-210 pb-180 p-relative fix" data-background="assets/img/com.jpg">
+                        <div class="er-hero-overlay"></div>
+                        <div class="er-hero-shap">
+                            <img class="er-hero-shap-1 p-absolute" src="assets/img/hero/element-top-left.png" alt="">
+                            <img class="er-hero-shap-2 p-absolute" src="assets/img/hero/element-top-right.png" alt="">
+                            <img class="er-hero-shap-3 p-absolute" src="assets/img/hero/element-round.png" alt="">
+                            <img class="er-hero-shap-4 p-absolute" src="assets/img/hero/element-buttom-left.png" alt="">
+                            <img class="er-hero-shap-5 p-absolute" src="assets/img/hero/element-top-dot.png" alt="">
+                        </div>
+                        <div class=" container p-relative z-index-11 ">
+                            <div class="row">
+                                <div class="col-xl-7 col-md-8 col-12">
+                                    <div class="er-hero-contain">
+                                        <h1 class="er-hero-title mb-20 wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.1s">Des animations qui font vibrer vos invités !</h1>
+                                        <p class="er-hero-para wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.4s">Animation de vos événements en arabe, anglais et français.</p>
+                                    </div>
+                                    <div class="er-hero-btn mt-48 wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.9s">
+                                        <a href="Animation.html" class="er-btn-2"><span>Nos services </span><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <!-- Add Pagination -->
+            <div style="color: white;" class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div style="color: white;" class="swiper-button-next"></div>
+            <div style="color: white;" class="swiper-button-prev"></div>
+        </div>
+        <!-- hero area -->
+        
+        <!-- blog area -->
+        <section class="er-blog-are pt-120 pb-40">
+            <div class="container">
+                <div class="er-section-title-wrapper text-center mb-53 wow erFadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <span class="er-section-subtitle mb-12">BeRabat</span>
+                    <h2 class="er-section-title mb-20">Nos Services</h2>
+                </div>
+                <div class="swiper er-blog-active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mb-40">
+                            <div class="erblog mb-40">
+                                <div class="erblog__image">
+                                    <img src="assets/img/event.jpg" alt="">
+                                </div>
+                                <h3 class="erblog__title"><a href="Evenementiel.html">Organisation d’événements</a></h3>
+                                <p style="font-size: 12px;margin:20px">Team Buildings - Intégrations - Conférences / Séminaires Kermesses - Remise des diplômes - Événements Sportifs</p>
+                                <div class="erblog__sep mt-15"></div>
+                                <div class="erblog__detail d-flex align-items-center mt-20 ml-23">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide mb-40">
+                            <div class="erblog mb-40">
+                                <div class="erblog__image">
+                                    <img src="assets/img/com.jpg" alt="">
+                                </div>
+                                <h3 class="erblog__title"><a href="Communication.html">Communication</a></h3>
+                                <p style="font-size: 12px;margin:20px">Community Management - Photographie / Vidéographie - Publicité</p>
+                                <div class="erblog__sep mt-15"></div>
+                                <div class="erblog__detail d-flex align-items-center mt-20 ml-23">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide mb-40">
+                            <div class="erblog mb-40">
+                                <div class="erblog__image">
+                                    <img src="assets/img/anim.jpg" alt="">
+                                </div>
+                                <h3 class="erblog__title"><a href="Animation.html">Animation</a> </h3>
+                                <a href=""><p style="font-size: 12px;margin:20px">Animation des événements</p></a>
+                                <div class="erblog__sep mt-15"></div>
+                                <div class="erblog__detail d-flex align-items-center mt-20 ml-23">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="er-chooseus-area pt-120 pb-60 p-relative" data-bg-color="#202020">
+            <div class="er-chooseus-shap ">
+                <img style="width: 969px;" class="er-chooseus-shap-1 p-absolute d-none d-xl-block" src="assets/img/tm.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-12 mb-30">
+                        <div class="er-section-title-wrapper mb-35 mb-36 wow erFadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <span class="er-section-subtitle mb-12">BeRabat</span>
+                            <h2 class="er-section-title er-section-title-white mb-20">Imaginez un événement parfaitement orchestré, où chaque détail est minutieusement pensé.</h2>
+                            <p class="er-section-content er-section-content-white">Chez Be.Rabat, nous nous spécialisons dans la création d'événements sur mesure qui captivent et inspirent. Qu'il s'agisse de team buildings dynamiques, de journées d'intégration motivantes, de conférences percutantes ou de tout autre type d'événement, nous mettons notre savoir-faire et notre créativité à votre service.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xl-6 mb-30">
+                        <div class="chooseus-img d-xl-none">
+                            <img src="assets/img/tm.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- about area -->
+        <section class="er-about-area pt-150 pb-135 p-relative fix">
+            <div class="er-about-shap">
+                <img class="er-about-shap-1 p-absolute" src="assets/img/ch.png" alt="">
+                <img class="er-about-shap-2 p-absolute d-none d-xl-block" src="assets/img/ch2.png" alt="">
+            </div>
+            <div class="container p-relative z-index-11">
+                <div class="row">
+                    <div class="col-xl-4 col-8 mb-50 offset-xl-2  offset-4">
+                        <div class="er-about-Experience d-flex align-items-end">
+
+                            <p> <span>+10</span> <br> <br>Ans <br>d’expérience</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-12">
+                        <div class="er-section-title-wrapper mb-36 wow erFadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <span class="er-section-subtitle mb-12">BeRabat</span>
+                            <h2 class="er-section-title mb-20">Notre agence en chiffres</h2>
+                            <p class="er-section-content">Nous transformons chaque événement en une expérience inoubliable et chaque stratégie de communication en un levier puissant pour le succès de nos clients.</p>
+                        </div>
+                        
+                        <div class="er-about-cta-area d-flex flex-wrap align-items-center ">
+                            <div class="er-about-btn mr-30 mb-30">
+                                <a href="contact.html" class="er-btn-2"><span>Get started</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="er-about-cta d-flex align-items-center mb-30">
+                                <div class="er-about-cta-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="er-about-cta-content ml-14">
+                                    <span>Contact</span>
+                                    <h4 class="m-0">06 72 39 27 03</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fact area -->
+        <div style="margin-top: 100px;" class="er-fact-area pb-90">
+            <div class="container ">
+                <div class="row gx-0">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="er-facts text-center mb-30">
+                            <h2 class="er-facts-number ">+<span>0</span></h2>
+                            <p class="er-facts-content">Ans d’expérience</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="er-facts text-center mb-30">
+                            <h2 class="er-facts-number ">+<span>0</span></h2>
+                            <p class="er-facts-content">Evénements organisés</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="er-facts text-center mb-30">
+                            <h2 class="er-facts-number ">+<span>0</span></h2>
+                            <p class="er-facts-content">Couvertures médiatiques réalisés</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="er-facts text-center mb-30">
+                            <h2 class="er-facts-number ">+<span>0</span></h2>
+                            <p class="er-facts-content">Evénements animés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- project area -->
+        <div class="er-project-area pt-120 pb-120" data-background="assets/img/project/projectbg.png">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-md-7 ">
+                        <div class="er-section-title-wrapper mb-50 mb-36 wow erFadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <h2 class="er-section-title mb-20 d-flex align-items-center"><span></span>Dernièrs Projets</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-5 mb-30">
+                        <div class="er-slider-btn d-flex justify-content-end">
+                            <div class=" er-swiper-button er-swiper-button-prev"><i class="fas fa-long-arrow-left"></i></div>
+                            <div class=" er-swiper-button er-swiper-button-next"> <i class="fas fa-long-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Swiper -->
+
+            <div class="container-fluid ">
+                <div class=" er-lr-105 ">
+                    <div class="swiper er-project-active ">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr1.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Evenementiel.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Team Building</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr2.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Communication.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Shooting Academique</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr3.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Evenementiel.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Tournoi Sportif</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr4.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Evenementiel.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Conférences</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr1.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Evenementiel.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Team Building</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr2.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Communication.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Shooting Academique</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr3.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Evenementiel.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Tournoi Sportif</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide er-box-300">
+                                <div class="er-single-item">
+                                    <img src="assets/img/pr4.jpg" alt="">
+                                </div>
+                                <div class="er-single-contain">
+                                    <div class="er-single-icon">
+                                        <a href="Evenementiel.html"><svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.1389 1.03992L1.09369 23.3248C0.467561 23.882 0.411101 24.8501 0.968224 25.4762L6.03298 31.1683C6.5901 31.7944 7.55822 31.8509 8.18435 31.2938L20.7639 20.1007L19.0751 49.0581C19.0512 49.4669 19.1906 49.8528 19.4641 50.1602C19.7376 50.4675 20.1161 50.6407 20.5135 50.6747L28.1293 51.1188C28.5596 51.1439 28.9354 50.9932 29.2314 50.7298C29.5274 50.4664 29.7107 50.0993 29.7459 49.6805L31.4132 20.7217L42.6063 33.3013C43.1634 33.9274 44.1315 33.9839 44.7577 33.4268L50.4498 28.362C51.0759 27.8049 51.1324 26.8368 50.5752 26.2106L28.2903 1.16538C27.7332 0.539254 26.7651 0.482793 26.1389 1.03992ZM49.4368 27.2236L43.7447 32.2883L30.1003 16.9538L28.1969 49.5901L20.581 49.146L22.4844 16.5097L7.16127 30.144L2.09651 24.4519L27.1418 2.16695L49.4368 27.2236Z" fill="#F94A29"/>
+                                        </svg></a>
+                                    </div>
+                                    <span>BeRabat</span>
+                                    <h3>Conférences</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- scroll area -->
+        <div class="er-scroll-area  pb-90">
+            <div class="scroll" style="--time:30s">
+                <div class="scroll-item">
+                    <span>Evénementiel </span>
+                    <h3 class="mash">Animation</h3>
+                    <span><img src="assets/img/brand/Star.svg" alt=""></span>
+                    <span>Communication</span>
+                    <span><img src="assets/img/brand/Star.svg" alt=""></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="scroll-item">
+                    <span>Evénementiel </span>
+                    <h3 class="mash">Animation</h3>
+                    <span><img src="assets/img/brand/Star.svg" alt=""></span>
+                    <span>Communication</span>
+                    <span><img src="assets/img/brand/Star.svg" alt=""></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="scroll-item">
+                    <span>Evénementiel </span>
+                    <h3 class="mash">Animation</h3>
+                    <span><img src="assets/img/brand/Star.svg" alt=""></span>
+                    <span>Communication</span>
+                    <span><img src="assets/img/brand/Star.svg" alt=""></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- work process -->
+        <section style="margin-top: 0px;" class="er-process-area pt-120 pb-50 p-relative">
+            <div class="er-process-shap d-none d-xl-block">
+            </div>
+            <div class="container">
+                <div class="er-section-title-wrapper text-center mb-53 mb-36 wow erFadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <span class="er-section-subtitle mb-12">BeRabat</span>
+                    <h2 class="er-section-title mb-20">Ils nous ont fait confiance</h2>
+                </div>
+                <div class="trusted-section">
+                    <div class="logo-container" id="logoContainer">
+                      <img src="assets/img/Patners/1.png" alt="Client 1 Logo">
+                      <img src="assets/img/Patners/2.png" alt="Client 2 Logo">
+                      <img src="assets/img/Patners/3.png" alt="Client 3 Logo">
+                      <img src="assets/img/Patners/4.png" alt="Client 4 Logo">
+                      <!-- Duplicate logos to create a seamless loop -->
+                      <img src="assets/img/Patners/5.png" alt="Client 1 Logo">
+                      <img src="assets/img/Patners/6.png" alt="Client 2 Logo">
+                      <img src="assets/img/Patners/7.png" alt="Client 3 Logo">
+                      <img src="assets/img/Patners/8.png" alt="Client 4 Logo">
+                      <img src="assets/img/Patners/1.png" alt="Client 1 Logo">
+                      <img src="assets/img/Patners/2.png" alt="Client 2 Logo">
+                      <img src="assets/img/Patners/3.png" alt="Client 3 Logo">
+                      <img src="assets/img/Patners/4.png" alt="Client 4 Logo">
+                      <!-- Duplicate logos to create a seamless loop -->
+                      <img src="assets/img/Patners/5.png" alt="Client 1 Logo">
+                      <img src="assets/img/Patners/6.png" alt="Client 2 Logo">
+                      <img src="assets/img/Patners/7.png" alt="Client 3 Logo">
+                      <img src="assets/img/Patners/8.png" alt="Client 4 Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+        
+        <!-- cta area -->
+        <section style="margin-top: 70px;" class="er-cta-area pt-100 pb-60" data-bg-color="#F94A29" data-background="assets/img/cta/bg-effect.png">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-12 mb-40">
+                        <div class="er-section-title-wrapper wow slideinleft" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                            <h2 class="er-section-title er-section-title-white mb-0">Vous avez un projet ?  <br> Discutons-en !</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-7 col-12  d-md-flex justify-content-start justify-content-xl-end wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                        <div class="er-cta-btn mr-30 mb-40">
+                            <a href="contact.html" class="er-btn-3">Lancer un projet <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="er-cta-btn mb-40">
+                            <a href="tel: 06 72 39 27 03" class="er-btn-4">06 72 39 27 03 <i class="fas fa-phone-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog area -->
+        <section class="er-blog-are pt-120 pb-40">
+            <div class="container">
+                <div class="er-section-title-wrapper text-center mb-53 wow erFadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                    <span class="er-section-subtitle mb-12">BeRabat</span>
+                    <h2 class="er-section-title mb-20">Dernières Nouvelles</h2>
+                </div>
+                <div class="swiper er-blog-active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mb-40">
+                            <div class="erblog mb-40">
+                                <div class="erblog__image">
+                                    <img src="assets/img/dip.jpg" alt="">
+                                </div>
+                                <span class="erblog__cat"><a href="#">BERABAT</a></span>
+                                <h3 class="erblog__title"><a href="blog-details.html">Remise Des Diplômes</a></h3>
+                                <div class="erblog__sep mt-15"></div>
+                                <div class="erblog__detail d-flex align-items-center mt-20 ml-23">
+                                    <div class="erblog__date"> <i class="fas fa-calendar-alt"></i> 01 Jan 2023</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide mb-40">
+                            <div class="erblog mb-40">
+                                <div class="erblog__image">
+                                    <img src="assets/img/pr1.jpg" alt="">
+                                </div>
+                                <span class="erblog__cat"><a href="#">BERABAT</a></span>
+                                <h3 class="erblog__title"><a href="blog-details.html">Un Team Building Inoubliable</a></h3>
+                                <div class="erblog__sep mt-15"></div>
+                                <div class="erblog__detail d-flex align-items-center mt-20 ml-23">
+                                    <div class="erblog__date"> <i class="fas fa-calendar-alt"></i> 01 Jan 2023</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide mb-40">
+                            <div class="erblog mb-40">
+                                <div class="erblog__image">
+                                    <img src="assets/img/pr4.jpg" alt="">
+                                </div>
+                                <span class="erblog__cat"><a href="#">BERABAT</a></span>
+                                <h3 class="erblog__title"><a href="blog-details.html">Conférences / Séminaires</a> </h3>
+                                <div class="erblog__sep mt-15"></div>
+                                <div class="erblog__detail d-flex align-items-center mt-20 ml-23">
+                                    <div class="erblog__date"> <i class="fas fa-calendar-alt"></i> 01 Jan 2023</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="er-footer pt-120" data-bg-color="#202020">
+            <div class="container">
+                <div class="row pb-60">
+                    <div class="col-xl-3 col-md-6 mb-30">
+                        <div class="er-footer-logo mb-35">
+                            <img src="assets/img/Logo.png" alt="">
+                        </div>
+                        <div class="er-footer-info d-flex align-items-center mb-15">
+                            <div class="er-footer-info-logo">
+                                <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.8636 0C24.4912 0 25 0.508773 25 1.13636V19.3257C25 19.9491 24.4826 20.4545 23.873 20.4545H3.39977C2.77733 20.4545 2.27273 19.949 2.27273 19.3257V18.1818H22.7273V4.88636L13.6364 13.0682L2.27273 2.84091V1.13636C2.27273 0.508773 2.7815 0 3.40909 0H23.8636ZM9.09091 13.6364V15.9091H0V13.6364H9.09091ZM5.68182 7.95454V10.2273H0V7.95454H5.68182ZM22.234 2.27273H5.0388L13.6364 10.0106L22.234 2.27273Z" fill="#F94A29"/>
+                            </svg>
+                            </div>
+                            <div class="er-footer-info-content">
+                                <span>Mail us</span>
+                                <h3><a href="contact.html"><span class="__cf_email__" data-cfemail="5a33343c351a23352f28373b333674393537">contact.berabat@gmail.com</span></a></h3>
+                            </div>
+                        </div>
+                        <div class="er-footer-info d-flex align-items-center ">
+                            
+                        </div>
+                        <div class="er-footer-info-sep mt-25 mb-25"></div>
+                        <div class="er-footer-social">
+                            <a href="https://web.facebook.com/berabatevents/?_rdc=1&_rdr#" class="mb-20"><i class="fab fa-facebook-f"></i> </a>
+                            <a href="https://www.instagram.com/be.rabat/?hl=en" class="mb-20"><i class="fab fa-instagram-square"></i> </a>
+                            <a href="" class="mb-20"><i class="fab fa-youtube"></i></a>
+
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-30">
+                        <div class="er-footer-widget-2 pl-100">
+                            <h3 class="er-footer-title mb-40"> <span></span>Nos Services</h3>
+                            <ul class="er-footer-menu">
+                                <li><a href="#">Evenementiel</a></li>
+                                <li><a href="#">Communication</a></li>
+                                <li><a href="#">Animation</a></li>
+                                
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-30">
+                        <div class="er-footer-widget-3 pl-70">
+                            <h3 class="er-footer-title mb-40"> <span></span>Useful Link</h3>
+                            <ul class="er-footer-menu">
+                                <li><a href="Evenementiel.html">Evenementiel</a></li>
+                                <li><a href="Communication.html">Communication</a></li>
+                                <li><a href="Animation.html">Animation</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mb-30">
+                        <div class="er-footer-widget-4 ">
+                            <h3 class="er-footer-title mb-40"> <span></span>Newsletter</h3>
+                            <form action="#" class="er-footer-form">
+                                <input type="email" placeholder="Email address">
+                            </form>
+                            <div class="er-footer-btn mt-15">
+                                <a href="contact.html" class="er-btn-2"><span>S'inscrire</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="er-footer-copyright text-center pt-20 pb-20" data-bg-color="#282828">
+            <p>© 2024 BeRabat tous droits réservés Alimenté par <a href=""> Matters</a> </p>
+        </div>
+
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 4.3 Blog css
+/*----------------------------------------*/
+
+.er-blog-details{
+    &-right-sitebar{
+        background-color: #F8F8F8;
+        padding: 54px 26px;
+        &-title{
+            color:  #30373E;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}
+.er-blog-tag{
+    span{
+        background-color: #FFF;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #505050;
+        font-family: var(--er-fonts-body);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+        margin-bottom: 10px;/* 133.333% */
+        &:hover{
+            background-color: var(--er-theme-color);
+            color: #FFF;
+        }
+    }
+}
+.er-blog-Recent-post{
+    &-content{
+       & h5{
+        color: var(--er-theme-heading-2);
+        font-family:var(--er-fonts-title);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+        &:hover{
+            color: var(--er-theme-color);
+        }
+        }
+        & span{
+            color: var(--er-theme-body);
+            font-family: var(--er-fonts-body);
+            font-size: 14px;
+            font-weight: 400;
+            display: inline-block;
+            & i{
+                color: var(--er-theme-color);
+                margin-right: 5px;
+            }
+            &:hover{
+                color: #505050;
+            }
+        }
+        
+    }
+}
+.er-blog-Tweeter{
+    &-icon{
+        color: var(--er-theme-color);
+        margin-right: 20px;
+    }
+    &-text{
+        & h5{
+            color: #30373E;       
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            
+        }
+        & p{
+            color: var(--er-theme-body);
+            font-family: var(--er-fonts-body);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 185.714% */
+        }
+        &:hover{
+             & h5{
+                color: var(--er-theme-color);
+             }
+             & p{
+                color: #505050;
+             }
+        }
+    }
+}
+.er-blog-archive{
+    & ul{
+        list-style: none;
+        & li{
+            & a{
+                color: #505050;
+                font-family: var(--er-fonts-body);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                
+            }
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #E3E3E3;
+            margin-bottom: 23px;
+            &:last-child{
+                border-bottom: none;
+            }
+            &:hover{
+                & a{
+                    color: var(--er-theme-color);
+                }
+            }
+        }
+    }
+}

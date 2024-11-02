@@ -1,0 +1,99 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 6.10 Process css
+/*----------------------------------------*/
+.process{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+       
+    &__icon{
+        width: 150px;
+        height: 150px;
+        transform: rotate(-39.368deg);
+        background-color: #F94A29;
+        display: block;
+        border-radius: 20px;
+        @include transition(.3s);
+        text-align: center;
+        line-height: 150px;
+        & svg{
+            transform: rotate(39.368deg);
+            @include transition(.3s);
+        }
+    }
+    &__count{
+        bottom: 155px;
+        right: 73px;
+        color: #222429;
+        text-align: center;
+        font-family: var(--er-fonts-title);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: block;
+        background-color: #ffffff;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        border-radius: 51%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        @include transition(.3s);
+        @media #{$xl,}{
+            right: 46px;
+            bottom: 182px;
+        }
+        @media #{$lg,}{
+            right: 130px;
+        }
+        @media #{$md,}{
+            right: 80px;
+        }
+        @media #{$xs,}{
+            right: 170px;
+            bottom: 140px;
+        }
+    }
+
+    &__title{
+        color: var(--er-theme-heading);
+        text-align: center;
+        font-family: var(--er-fonts-title);
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__content{
+        color: var(--er-theme-body);
+        text-align: center;
+        font-family: var(--er-fonts-body);
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    &:hover{
+        & .process__count{
+            background-color: #F94A29;  
+            color: #ffffff;
+        }
+
+        & .process__icon{
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            & path {
+                @include transition(.3s);
+                fill: #F94A29;
+            }
+        }
+        
+    }
+   
+}
+.er-process-shap-1 {
+	top: 337px;
+	left: 0;
+    right: 0;
+    margin: auto;
+   
+}

@@ -1,0 +1,105 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 2.5 Offcanvas
+/*----------------------------------------*/
+
+.er-offcanvas {
+    &-logo{
+        & img{
+            width: 152px;
+        }
+    }
+    &-wrapper{
+        position: fixed;
+        background-color: #fff;
+        width: 300px;
+        top: 0;
+        right: 0;
+        padding: 50px 40px;
+        height: 100%;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        @include transform(translateX(100%));
+        @include transition(.3s);
+        overflow-y: scroll;
+        overscroll-behavior-y: contain;
+        scrollbar-width: none;
+       
+}
+    @media only screen and (max-width:400px){
+        width: 100%; 
+        //padding: 35px 30px; 
+    }
+   
+   
+    &-open{
+        &  .er-offcanvas-wrapper{
+            opacity: 1;
+            visibility: visible;
+            @include transform(translateX(0));
+           }
+        & .er-offcanvas-overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+       
+    }
+    &-close-toggle{
+        font-size: 30px;
+        color: #0A0E1A;
+    }
+    &-header {
+        @media #{$lg, $md, $xs}{
+            margin-bottom: 40px;  
+          }
+    }
+    
+    &-title{
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+    &-sm-title{
+        font-size: 25px;
+    }
+    &-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    &-info{
+        span{
+            color: #222; 
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+    &-social{
+        & a{
+            display: inline-block;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            line-height: 39px;
+            border-radius: 40px;
+            color: #0A0E1A;
+            border: 1px solid rgba(2, 11, 24, 0.1);
+            font-size: 14px;
+        }
+    }
+    &-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: -.45s ease-in-out;
+        background:rgba(24, 24, 24, 0.7) ;
+    }
+   
+   
+}

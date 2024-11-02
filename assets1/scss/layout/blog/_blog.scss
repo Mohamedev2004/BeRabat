@@ -1,0 +1,104 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 4.2 Blog css
+/*----------------------------------------*/
+.erblog{
+    background-color: #fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 1, 0.1);
+    border-radius:  20px;
+    padding-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    &-2{
+        box-shadow: 5px 2px 30px rgba(0, 0, 1, 0.1);
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    &__image{
+        & img{
+            width: 100%;
+            border-radius:20px;
+        }
+    }
+    &__cat{
+        position: absolute;
+        left: 22px;
+        bottom: 146px;
+        display: block;
+        padding: 5px 20px;
+        color: var(--White, #FFF);
+        font-family: var(--er-fonts-title);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        border-radius: 50px;
+        background: var(--er-theme-color);
+        margin-bottom: 10px;
+    }
+    &__title{
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 35px;
+        margin-left: 23px;
+        display: block;
+        @include transition(.3s);
+        &:hover{
+            color: var(--er-theme-color);
+        }
+    }
+    &__sep{
+        width: 80%;
+        height: 1px;
+        background: var(--er-theme-color);
+        margin-left: 24px;
+        @media #{$xl}{
+            width: 260px;
+        }
+    }
+    &__detail-sep{
+        width: 8.544px;
+        height: 1px;
+        opacity: 0.8;
+        background: #777;
+        transform: rotate(-74deg);
+        -webkit-transform: rotate(-74deg);
+        -moz-transform: rotate(-74deg);
+        -ms-transform: rotate(-74deg);
+        -o-transform: rotate(-74deg);
+    }
+    &__date{
+        & i{
+            color: var(--er-theme-color);
+            margin-right: 5px;
+        }
+        color: #777;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        text-transform: uppercase;
+    }
+    &__tag{
+        & i{
+            color: var(--er-theme-color);
+            margin-right: 5px;
+        }
+        color: #777;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        text-transform: uppercase;
+    }
+}
+.plr-305{
+    padding-left: 280px;
+    padding-right: 280px;
+    @media #{ $xs, $lg, $md, $xl, $xxlm}{
+        padding-left: 100px;
+        padding-right: 100x;
+    }
+}

@@ -1,0 +1,79 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 2.1 Accordion
+/*----------------------------------------*/
+
+.er-accordion{
+    &-header {
+        background: #FFF;
+        box-shadow: 20px 20px 60px 0px rgba(0, 0, 1, 0.05);
+        margin: 0;
+        @include transition(.3s);
+        
+    }
+    
+    &-button{
+        color: var(--er-theme-heading);
+        font-family: var(--er-fonts-title);
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 19px 21px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        position: relative;
+        & span{
+            margin-left: 30px;
+            font-size: 16px;
+            display: inline-block;
+            color: #fff;
+            z-index: 11;
+            
+        }
+        &:after{
+            border-bottom: 64px solid #F94A29;
+            border-left: 25px solid transparent;
+            content: "";
+            height: 100%;
+            width: 59px;
+            position: absolute;
+            bottom: 0;
+            
+            right: 0;
+            z-index: 5;
+            
+        }
+        &.collapsed{
+            & span {
+                @include transform(rotate(-90deg));
+            }
+            &:after{
+                border-bottom: 64px solid #202020;
+            }
+            
+        }
+    }
+    &-body{
+        background-color: #fff;
+        padding: 20px;
+        fill: var(--White, #FFF);
+        stroke-width: 1px;
+        border: 1px solid rgba(25, 25, 25, 0.10);
+        border-top: 0;
+        filter: drop-shadow(0px 4px 60px rgba(0, 0, 0, 0.05));
+    }
+    
+}
+
+.er-accordion-item-2{
+    & .er-accordion-body{
+        padding-top: 0;
+        padding-bottom: 0px;
+    }
+    
+}

@@ -1,0 +1,147 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 6.2 Brand css
+/*----------------------------------------*/
+
+
+.scroll {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+
+  &-item {
+    white-space: nowrap;
+    animation: scroll 30s linear infinite; /* Slower scroll speed */
+    animation-delay: -30s;
+
+    &:nth-child(2) {
+      animation: scroll2 30s linear infinite; /* Slower scroll speed for second child */
+      animation-delay: -15s;
+    }
+
+    & span {
+      display: inline-flex;
+      margin: 0 30px;
+      color: var(--er-theme-body);
+      font-family: var(--er-fonts-title);
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+
+      & img {
+        display: inline-flex;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.mbottom-5 {
+  margin-bottom: 5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+
+
+.mash{
+  display: inline-flex;
+  margin: 0 40px;
+  font-family: var(--er-fonts-title);
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url(https://media.istockphoto.com/id/1453607294/photo/group-of-business-people-meeting-discussing-renewable-energy-black-and-white.jpg?b=1&s=170667a&w=0&k=20&c=BXvWZKybH7JU-waAriuAWZ1odXEcTdSYU6ew5eGNijA=);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(249,74,41,80%);;
+  
+}
+/* digital agency */
+
+.scroll-2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+
+  &-item {
+    white-space: nowrap;
+    animation: scroll-left-right 30s linear infinite; /* Slower scroll speed */
+    animation-delay: -30s;
+
+    &:nth-child(2) {
+      animation: scroll-left-right-2 30s linear infinite; /* Slower scroll speed for second child */
+      animation-delay: -15s;
+    }
+
+    & span {
+      display: inline-flex;
+      margin: 0 30px;
+      color: var(--er-theme-body);
+      font-family: var(--er-fonts-title);
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+
+      & img {
+        display: inline-flex;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.mbottom-5 {
+  margin-bottom: 5px;
+}
+
+@keyframes scroll-left-right {
+  0% {
+    transform: translateX(-100%); /* Start from the left */
+  }
+  100% {
+    transform: translateX(100%); /* Move to the right */
+  }
+}
+
+@keyframes scroll-left-right-2 {
+  0% {
+    transform: translateX(-200%); /* Start further to the left */
+  }
+  100% {
+    transform: translateX(0); /* Move to the right */
+  }
+}
+
+
+
+

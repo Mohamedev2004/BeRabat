@@ -1,0 +1,158 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 1.2 Common Classes
+/*----------------------------------------*/
+
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+img{
+	max-width: 100%;
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.overflow-x-visible{
+	overflow-x: visible;
+	overflow-y: hidden;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+.er-back-bg{
+	background-color: var(--er-common-black);
+}
+.er-white-bg{
+	background-color: #fff;
+}
+.er-bg{
+	background-color: #202020;
+}
+.er-black{
+	color: #202020;
+}
+.er-nblue-bg{
+	background-color: var(--er-theme-nblue);
+}
+.er-yellow-bg{
+	background-color: var(--er-theme-color-2);
+}
+.er-yellow-bg-2{
+	background-color: var(--er-theme-color-4);
+}
+.er-rom-bg{
+	background-color: var(--er-rom-color);
+}
+.er-rom-bg-2{
+	background-color: var(--er-rom-color-2);
+}
+
+.er-theme-black-bg{
+	background-color: var( --er-common-black);
+}
+.er-theme-orange{
+	color: var( --er-theme-color-orange);
+}
+
+.br-20{
+	border-radius: 20px;
+	& img{
+		border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	}
+}
+.br-140{
+	border-radius: 140px;
+	-webkit-border-radius: 140px;
+	-moz-border-radius: 140px;
+	-ms-border-radius: 140px;
+	-o-border-radius: 140px;
+}
+.br-150{
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	-ms-border-radius: 150px;
+	-o-border-radius: 150px;
+}
+.br-15{
+	border-radius: 15px;
+	& img{
+		border-radius: 15px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-ms-border-radius: 15px;
+		-o-border-radius: 15px;
+}
+}
+.br-10{
+	border-radius: 10px;
+	& img{
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+}
+}
+.er-rotate-180{
+    transform: rotate(180deg);
+}
+.er-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.er-brand-slide-element {
+	width: auto;
+	display: inline-block;
+
+}
+.bg-pos-bott{
+	background-position:right;
+	background-repeat: no-repeat;
+}
+.er-upper{
+	text-transform: uppercase;
+}
+.er-cap{
+	text-transform: capitalize;
+}
+.er-section-m-100{
+	margin: o 100px;
+}
+.er-fs30{
+	font-size: 30px;
+}

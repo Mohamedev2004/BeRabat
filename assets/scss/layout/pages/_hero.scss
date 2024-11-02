@@ -1,0 +1,169 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 6.8 Hero css
+/*----------------------------------------*/
+.er-hero{
+    &-area{
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+     }
+    &-overlay{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        display: block;
+        opacity: 0.85;
+        background: linear-gradient(100deg, #000 0%, rgba(0, 0, 0, 0.00) 156.49%);
+        height: 100%;
+        mix-blend-mode: hard-light;
+        z-index: 1;
+        width: 100%;
+    }
+    &-title{
+        font-size: 80px;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 600;
+        & br{
+            @media #{ $xs}{
+                display:none;
+            } 
+        }
+        @media #{$lg, $xl, $md, $xs}{
+            font-size: 60px;
+        }
+        @media #{$xs}{
+            font-size: 50px;
+        }
+        
+    }
+    &-para{
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        margin: 0;
+        & br{
+            @media #{$md, $xs}{
+                display:none;
+            } 
+        }
+    }
+    &-shap{
+       
+        &-1{
+            top: -178px;
+            left: 0;
+            z-index: 2;
+        }
+        &-2{
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+        &-3{
+            left: 247px;
+            top: 20%;
+            z-index: 4;
+        }
+        &-4{
+            bottom: 0px;
+            left: 247px;
+            z-index: 2;
+        }
+        &-5{
+            top: -130px;
+            left: 0;
+            z-index: 4;
+        }
+        // home 2
+        &-6{
+            top: 0;
+            right: 0;
+            z-index: 2;
+            @media #{$xxlm, $xl}{
+                right: -200px;
+                
+            }
+            @media #{$xl, }{
+                right: -370px;
+                
+            }
+            @media #{$lg}{
+                right: -480px;
+                
+            }
+        }
+    }
+}
+
+// home 2
+.er-hero-text{
+    @media #{$xxlm}{
+        margin-left: 60px;
+        
+    }
+    @media #{$xl, $lg}{
+        margin-left: 30px;
+        
+    }
+    @media #{$lg}{
+        margin-left: 20px;
+        
+    }
+    @media #{$md, $xs}{
+        margin-left: 5px;
+        
+    }
+    &-subtitle{
+        color: #FFF;
+        font-family: var( --er-fonts-body);
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        &::before{
+            content: "";
+            background-color: #FFF;
+            height: 1px;
+            width: 15px;
+            display: inline-block;
+            margin-right: 10px;
+            @include transform(translatey(-4px));
+        }
+    }
+    &-title{
+        color: var(--White, #FFF);
+        font-family: var(--er-fonts-title);
+        font-size: 80px;
+        font-weight: 600;
+        line-height: 1;
+        text-transform: uppercase;
+        & br{
+            @media #{ $xs}{
+                display:none;
+            } 
+        }
+        @media #{$xxlm , $md,  $xl, $lg}{
+            font-size: 60px;
+            
+        } 
+        @media #{$xs}{
+            font-size: 50px;
+            
+        } 
+    }
+    &-content{
+        opacity: 0.5;
+        color: #FFF;
+        font-family: var( --er-fonts-body);
+        font-size: 16px;
+        font-weight: 400;
+        & br{
+            @media #{ $xl,$lg,$xxlm,$xs}{
+                display:none;
+            } 
+        }
+    }
+}

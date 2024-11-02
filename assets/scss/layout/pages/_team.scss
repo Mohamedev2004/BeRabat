@@ -1,0 +1,169 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 6.12 Team css
+/*----------------------------------------*/
+.er-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-image{
+        width: 100%;
+        & img{
+            width: 100%;
+        }
+    }
+    &-bg{
+        background-color: #fff;
+        margin-top: -55px;
+        padding: 30px 50px;
+        text-align: center;
+        box-shadow: 5px 10px 20px rgba(0, 0, 1, 0.1);
+        top: -30px;
+        position: relative;
+        & span{
+            color: var(--er-theme-body);
+            font-family: var(--er-fonts-body);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+    }
+    &-title{
+        color: var(--er-theme-heading);
+        text-align: center;
+        font-family: var(--er-fonts-title);
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+        
+        text-transform: capitalize;
+        @media #{$md, $xs, $lg, $xl}{
+            font-size: 20px;
+            
+        }
+        &:hover{
+            color: var(--er-theme-color);
+        }
+    }
+    &-scoil{
+        background-color:var(--er-theme-color);
+        top: -70px;
+        position: relative;
+        width: 150px;
+        height: 30px;
+       z-index: 3;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        & i{
+            color: #fff;
+            
+        }
+        
+    }
+  
+}
+// team page
+.er-progressbar{
+    background-color: #fff;
+    display: block;
+    box-shadow: 5px 10px 20px rgba(0, 0, 1, 0.1);
+    padding: 60px 40px;
+    &-title{
+        color: #505050;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+    }
+    &-parse{
+        background-color: #FF6548;
+        color: #fff;
+        width: 42px;
+        height: 36px;
+        line-height: 35px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        position: relative;
+        display: inline-block;
+        &::before{
+            position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #FF6548;
+        top: 90%; /* Moves the triangle below the element */
+        left: 50%; /* Centers the triangle horizontally */
+        transform: translateX(-50%); /* Corrects for half of the triangle width */
+        z-index: 1;
+        }
+    }
+}
+.progress-bar {
+    background-color: #FF6548;
+}
+.progress, .progress-stacked {
+    --bs-progress-height: 5px;
+}
+// single team
+.er-single-team{
+    &-img{
+        width: 100%;
+        & img{
+            width: 100%;
+        }
+    }
+    &-info{
+        
+        &-icon{
+            color: var(--er-theme-color);
+            font-size: 22px;
+            margin-right: 20px;
+        }
+        &-list{
+            &-title{
+                color:  #535353;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            & span{
+                color: #777;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                margin-left: 40px;
+            }
+        }
+    }
+    &-content{
+        & span{
+            color: var(--er-theme-color);
+            font-family: var(--er-theme-color);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+    
+    &-about{
+        @media #{$md, $xs, $lg, }{
+           padding-left: 0;
+            
+        }
+    }
+}

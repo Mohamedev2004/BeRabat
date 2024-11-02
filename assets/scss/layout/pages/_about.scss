@@ -1,0 +1,326 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/* 6.1 About css
+/*----------------------------------------*/
+.er-about{
+    &-Experience{
+        background-color: #F94A29;
+        text-align: center;
+        padding: 45px;
+        width: 245px;
+        height: 243px;
+        
+        margin-top: 10px;
+        border-radius: 0  30% 0 0;
+       
+        
+        
+        & p{
+            color: #FFF;
+            font-family:  var(--er-fonts-title);
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: -0.6px;
+            margin: 0;
+            line-height: 1;
+            & span{
+                color: #FFF;
+                font-family: var(--er-fonts-title);
+                font-size: 85px;
+                font-weight: 700;
+                display: inline-block;
+                line-height: 0;
+            }
+        }
+    }
+
+    &-list{
+        &-icon{
+            & i{
+                background-color: #FA360A;
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                border-radius: 30px;
+            }
+        }
+        &-content{
+            color:#191919;
+            font-family: var(--er-fonts-title);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            
+        }
+    }
+
+    &-cta{
+        &-icon{
+            border: 1px solid #F94A29;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            background-color: rgba(249, 74, 41, 0.05);
+            text-align: center;
+            border-radius: 50%;
+            color: var(--er-theme-color);
+            font-size: 22px;
+        }
+        &-content{
+            & span{
+                color: var(--er-theme-color);
+                font-family: var(--er-fonts-body);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                text-transform: capitalize;
+               
+            }
+            & h4{
+                color: var(--er-theme-heading);
+                font-family: var(--er-fonts-title);
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    
+    }
+
+    &-shap{
+        &-1{
+            left: 13%;
+            top: 120px;
+            
+            z-index: 1;
+            @media #{$xs}{
+                top: 4%;
+                left: 5%;
+            }
+            @media #{$md}{
+                top: 6%;
+                left: 5%;
+            } 
+            @media #{$lg}{
+                top: 6%;
+                left: 5%;
+            } 
+            @media #{$xxlm}{
+                top: 15%;
+                left: 5%;
+            }
+            @media #{$xl}{
+                top: 15%;
+                left: 5%;
+            }
+            
+           
+        }    
+        &-2{
+            top: 46%;
+            left: 22%;
+            z-index: 1;
+            
+            
+            
+        }
+
+    }
+}
+.er-about-btn{
+    @media #{$xs}{
+        margin-right: 60px;
+    } 
+    @media #{$md, $lg}{
+        margin-right: 165px;
+    } 
+    @media #{$lg}{
+        margin-right: 290px;
+    } 
+}
+@media (max-width: 1700px) {
+    
+    .er-about-shap-2 {
+        top: 47%;
+        left: 17%;
+    }
+}
+@media (max-width: 1600px) {
+    
+    .er-about-shap-2 {
+        top: 47%;
+        left: 14%;
+    }
+}
+@media (max-width: 1500px) {
+    
+    .er-about-shap-2 {
+        top: 47%;
+        left: 11%;
+    }
+}
+@media (max-width: 1400px) {
+   
+   
+    .er-about-shap-2 {
+        top: 47%;
+        left: 11%;
+    }
+}
+ 
+  @media only screen and (min-width: 1921px) {
+    .er-about-shap-1 {
+        top: 15%;
+        left: 22%;
+    }
+    .er-about-shap-2 {
+        top: 47%;
+        left: 28%;
+    }
+  }
+//   home 2
+.er-about-area{
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+.er-about{
+    &-item {
+    & ul{
+        list-style: none;
+            & li{
+                color: var(--er-theme-heading);
+                font-family: var(--er-fonts-body);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                & i{
+                    color: var(--er-theme-color);
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    &-sep{
+        width: 248px;
+        height: 1px;
+        background-color: #D2D2D2;
+        display: block;
+    }
+    &-percentage{
+        
+        &-numb{
+            color: var(--er-theme-color);
+            font-family: var(--er-fonts-title);
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+        }
+        & span{
+            color: #505050;
+            font-family: var(--er-fonts-body);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
+        &-sep{
+            width: 126px;
+            height: 1px;
+            background-color: #D2D2D2;
+            display: block;
+        }
+    }
+    &-tag{
+        bottom: 13%;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        @media #{$xl}{
+            bottom: 22%;
+        }
+        @media #{$lg, $md, $xs}{
+            bottom: 55%;
+            left: 16%;
+        }
+        @media #{$xs}{
+            bottom:79%;
+            left: 4%;
+        }
+        
+        
+       &-icon{
+        background-color:var(--er-theme-color);
+        display: inline-block;
+        padding:  24px 16px;
+        
+        }
+        &-text{
+            color: #FFF;
+            font-family: var(--er-fonts-body);
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: capitalize;
+            padding: 25px 40px;
+            margin: 0;
+            background-color: #000;
+            display: inline-block;
+        }
+    }
+}
+.er-about-image-1{
+    margin-left: -100px;
+    @media #{$xxlm}{
+        margin-left: -70px;
+    } 
+    @media #{$lg, $md, }{
+        margin-left: 100px;
+    } 
+    @media #{$xs}{
+        margin-left: 40px;
+    } 
+}
+.er-about-right-items {
+    padding-top: 39px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+//   @media only screen and (min-width: 1700px) {
+    
+//     .er-about-shap-2 {
+//         top: 365px;
+//     left: 376px;
+//       }
+//   }
+//   @media only screen and (min-width: 1600px) {
+    
+//     .er-about-shap-2 {
+//         top: 365px;
+//     left: 350px;
+//       }
+//   }
+//about page
+
+.faq-shap{
+  bottom: 0;
+  right: 0;
+  @media #{$xxlm}{
+    right: -10%;
+} 
+@media #{$xl}{
+    right: -30%;
+} 
+}

@@ -1,0 +1,95 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/* 6.5 Contact css
+/*----------------------------------------*/
+.er-cta-form{
+    & input{
+        border: 1px solid #E3E3E3;
+        padding: 20px;
+       
+   
+        
+        
+    }
+    & textarea{
+        height: 205px;
+        padding: 20px;
+        border: 1px solid #E3E3E3;
+       
+       
+        
+    }
+}
+.er-cta{
+    &-title{
+        color: #30373E;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &-info{
+        &-icon{
+            & i{
+                background-color: var( --er-theme-color);
+                display: inline-block;
+                color: #fff;
+                font-size: 30px;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+            }
+        }
+        &-title{
+            color: #30373E;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+    &-text{
+        & span{
+            color: #505050;
+            font-family: var(--er-fonts-body);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; /* 162.5% */
+            text-transform: uppercase;
+        }
+    }
+}
+.er-smcta{
+    &-area{
+    z-index: 11 ;
+    position: relative;
+    
+    padding: 40px;
+    background-color: #fff;
+    & input{
+        border: 1px solid #f4b895;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    & textarea{
+        border: 1px solid #f4b895;
+        margin-bottom: 20px;
+        padding: 20px;
+        height: 130px;
+    }
+    }
+    &-title{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+}
+.er-map-area{
+    margin-bottom: -7px;
+    width: 100%;
+    height: 60%;
+}
