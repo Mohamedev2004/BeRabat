@@ -12860,7 +12860,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .er-box-300 img {
-    width: 100%;
     height: 500px;
     object-fit: cover;
 }
